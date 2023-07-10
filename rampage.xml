@@ -2,7 +2,7 @@
 <manifest>
 <remote  name="rampage"
            fetch="https://github.com/RampageOS"
-           revision="refs/heads/11.x" />
+           revision="refs/heads/rifle" />
 
 <project path="build/make" name="build" groups="pdk" remote="rampage" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -14,8 +14,26 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <project path="frameworks/base" name="frameworks_base" remote="rampage" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="rampage" />
   <project path="vendor/rampage" name="vendor_rampage" remote="rampage" />
+
+  <!--packages/apps-->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="rampage" />
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts" groups="pdk-fs" remote="rampage" />
+  <project path="packages/apps/KeyChain" name="packages_apps_KeyChain" groups="pdk-fs" remote="rampage" />
+
+  <!--packages/providers-->
+  <project path="packages/providers/ContactsProvider" name="packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="rampage" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="rampage" />
+  
+  <!--system-->
+  <project path="system/bt" name="system_bt" groups="pdk" remote="rampage" />
+  <project path="system/tools/aidl" name="system_tools_aidl" groups="pdk" remote="rampage" />
+
+  <!--frameworks-->
+  <project path="frameworks/av" name="frameworks_av" remote="rampage" />
+  <project path="frameworks/base" name="frameworks_base" remote="rampage" />
+
+  <!--external-->
+  <project path="external/tremolo" name="external_tremolo" groups="pdk" remote="rampage" />
 
 </manifest>

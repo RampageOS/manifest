@@ -28,15 +28,6 @@
   <project path="art" name="platform_art" groups="pdk" remote="aex" />
   <project path="bionic" name="platform_bionic" groups="pdk" remote="aex" />
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="aex" />
-  <project path="build/make" name="platform_build" groups="pdk" remote="aex" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
-  </project>
   <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed" remote="aex" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
@@ -53,7 +44,6 @@
   <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="aex" />
   <project path="external/robolectric-shadows" name="platform_external_robolectric-shadows" remote="aex" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="aex" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="aex" />
   <project path="frameworks/libs/systemui" name="platform_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" remote="aex" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="aex" />
   <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="aex" />
@@ -76,7 +66,6 @@
   <project path="packages/apps/ManagedProvisioning" name="platform_packages_apps_ManagedProvisioning" groups="pdk-fs" remote="aex" />
   <project path="packages/apps/PermissionController" name="platform_packages_apps_PackageInstaller" groups="pdk-fs" remote="aex" />
   <project path="packages/apps/PotatoPlugins" name="platform_packages_apps_Plugins" remote="aex" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="aex" />
   <project path="packages/apps/SettingsIntelligence" name="platform_packages_apps_SettingsIntelligence" groups="pdk-fs" remote="aex" />
   <project path="packages/apps/Snap" name="platform_packages_apps_Snap" remote="aex" />
   <project path="packages/apps/SoftAPManager" name="platform_packages_apps_SoftAPManager" remote="aex" />
@@ -104,7 +93,6 @@
   <project path="system/update_engine" name="platform_system_update_engine" groups="pdk" remote="aex" />
   <project path="system/vold" name="platform_system_vold" groups="pdk" remote="aex" />
   <project path="tools/extract-utils" name="platform_tools_extract-utils" remote="aex" />
-  <project path="vendor/aosp" name="platform_vendor_aosp" remote="aex" />
   <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="aex"  />
   <project path="libcore" name="platform_libcore" remote="aex" />
 

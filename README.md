@@ -1,6 +1,3 @@
-<p align="center">
-<img src="https://raw.githubusercontent.com/AospExtended/Documentation_and_thread-template/10.x/Banner.png" > 
-</p>
 
 RampageOS Rifle
 ===========

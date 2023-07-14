@@ -37,6 +37,7 @@
 
   <!--external-->
    <project path="external/libavc" name="external_libavc" groups="pdk" remote="rampage"/>
+     <project path="external/libexif" name="external/libexif" groups="pdk" remote="rampage" />
   <project path="external/tremolo" name="external_tremolo" groups="pdk" remote="rampage" />
 
 </manifest>

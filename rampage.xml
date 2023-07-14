@@ -34,6 +34,7 @@
   <!--frameworks-->
   <project path="frameworks/av" name="frameworks_av" remote="rampage" />
   <project path="frameworks/base" name="frameworks_base" remote="rampage" />
+  <project path="frameworks/native" name="frameworks_native" remote="rampage" />
 
   <!--external-->
    <project path="external/libavc" name="external_libavc" groups="pdk" remote="rampage"/>

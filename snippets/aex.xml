@@ -27,7 +27,6 @@
   <project path="manifest" name="manifest" remote="aex" />
   <project path="art" name="platform_art" groups="pdk" remote="aex" />
   <project path="bionic" name="platform_bionic" groups="pdk" remote="aex" />
-  <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="aex" />
   <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed" remote="aex" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />

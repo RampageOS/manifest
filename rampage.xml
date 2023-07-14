@@ -36,6 +36,7 @@
   <project path="frameworks/base" name="frameworks_base" remote="rampage" />
 
   <!--external-->
+   <project path="external/libavc" name="external_libavc" groups="pdk" remote="rampage"/>
   <project path="external/tremolo" name="external_tremolo" groups="pdk" remote="rampage" />
 
 </manifest>

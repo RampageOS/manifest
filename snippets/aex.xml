@@ -43,8 +43,7 @@
   <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="aex" />
   <project path="external/robolectric-shadows" name="platform_external_robolectric-shadows" remote="aex" />
   <project path="frameworks/libs/systemui" name="platform_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" remote="aex" />
-  <project path="hardware/aosp/hal" name="platform_hardware_aosp" groups="pdk" remote="aex" />
-  <project path="hardware/nxp/nfc" name="platform_hardware_nxp_nfc" groups="pdk" remote="aex" />  
+  <project path="hardware/aosp/hal" name="platform_hardware_aosp" groups="pdk" remote="aex" /> 
   <project path="hardware/aosp/interfaces" name="platform_hardware_aosp_interfaces" groups="pdk" remote="aex" />
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" groups="pdk-fs" remote="aex" />
   <project path="packages/apps/Camera2" name="platform_packages_apps_Camera2" groups="pdk-fs" remote="aex" />

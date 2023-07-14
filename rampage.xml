@@ -28,6 +28,9 @@
   <project path="packages/providers/ContactsProvider" name="packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="rampage" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="rampage" />
   
+  <!--packages/services-->
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="rampage" />
+
   <!--system-->
   <project path="system/bt" name="system_bt" groups="pdk" remote="rampage" />
   <project path="system/tools/aidl" name="system_tools_aidl" groups="pdk" remote="rampage" />

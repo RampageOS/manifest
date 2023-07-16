@@ -43,6 +43,7 @@
     <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="rampage" />
 
   <!--external-->
+  <project path="external/aac" name="external_aac" groups="pdk" remote="rampage" />
    <project path="external/libavc" name="external_libavc" groups="pdk" remote="rampage"/>
      <project path="external/libexif" name="external/libexif" groups="pdk" remote="rampage" />
   <project path="external/tremolo" name="external_tremolo" groups="pdk" remote="rampage" />

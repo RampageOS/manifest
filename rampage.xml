@@ -36,6 +36,7 @@
 
   <!--system-->
   <project path="system/core" name="system_core" groups="pdk" remote="rampage" />
+  <project path="system/nfc" name="system_nfc" groups="pdk" remote="rampage" />
   <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="rampage" />
   <project path="system/tools/aidl" name="system_tools_aidl" groups="pdk" remote="rampage" />
 

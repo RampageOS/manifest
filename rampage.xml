@@ -45,15 +45,16 @@
   <project path="frameworks/av" name="frameworks_av" remote="rampage" />
   <project path="frameworks/base" name="frameworks_base" remote="rampage" />
   <project path="frameworks/native" name="frameworks_native" remote="rampage" />
-    <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="rampage" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="rampage" />
 
   <!--external-->
   <project path="external/aac" name="external_aac" groups="pdk" remote="rampage" />
-   <project path="external/libavc" name="external_libavc" groups="pdk" remote="rampage"/>
-     <project path="external/libexif" name="external/libexif" groups="pdk" remote="rampage" />
+  <project path="external/libavc" name="external_libavc" groups="pdk" remote="rampage"/>
+  <project path="external/libexif" name="external/libexif" groups="pdk" remote="rampage" />
   <project path="external/tremolo" name="external_tremolo" groups="pdk" remote="rampage" />
+  <project path="external/expat" name="external_expat" groups="pdk" remote="rampage" />
 
   <!--hardware-->
-    <project path="hardware/nxp/nfc" name="platform_hardware_nxp_nfc" groups="pdk" remote="rampage" /> 
+  <project path="hardware/nxp/nfc" name="platform_hardware_nxp_nfc" groups="pdk" remote="rampage" /> 
 
 </manifest>

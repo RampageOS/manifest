@@ -18,6 +18,7 @@
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="rampage" />
 
   <!--packages/apps-->
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-fs" remote="rampage" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="rampage" />
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" groups="pdk-fs" remote="rampage" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" groups="pdk-fs" remote="rampage" />

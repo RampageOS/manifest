@@ -44,6 +44,7 @@
   <!--frameworks-->
   <project path="frameworks/av" name="frameworks_av" remote="rampage" />
   <project path="frameworks/base" name="frameworks_base" remote="rampage" />
+  <project path="frameworks/minikin" name="frameworks_minikin" groups="pdk-cw-fs,pdk-fs" remote="rampage" />
   <project path="frameworks/native" name="frameworks_native" remote="rampage" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="rampage" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" groups="pdk" remote="rampage" />

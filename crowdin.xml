@@ -8,9 +8,6 @@
   <default remote="aex" 
            sync-c="true" 
            sync-j="4"  />
-  <project path="manifest" name="manifest" remote="aex" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="aex" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="aex" />
   <project path="packages/apps/Extensions" name="platform_packages_apps_Extensions" remote="aex" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" groups="pdk-fs" remote="aex" />
   <project path="packages/apps/FaceUnlockService" name="platform_packages_apps_FaceUnlockService" remote="aex" />

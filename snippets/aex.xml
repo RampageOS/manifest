@@ -24,7 +24,6 @@
            revision="refs/heads/lineage-18.1" />
 
   <!-- AospExtended -->
-  <project path="manifest" name="manifest" remote="aex" />
   <project path="art" name="platform_art" groups="pdk" remote="aex" />
   <project path="bionic" name="platform_bionic" groups="pdk" remote="aex" />
   <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed" remote="aex" >

@@ -31,14 +31,16 @@
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="rampage" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="rampage" />
   <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="rampage" />
+  
   <!--packages/services-->
+  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="rampage" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="rampage" />
 
   <!--system-->
   <project path="system/bt" name="android_system_bt" groups="pdk" remote="rampage" />
   <project path="system/core" name="system_core" groups="pdk" remote="rampage" />
   <project path="system/nfc" name="system_nfc" groups="pdk" remote="rampage" />
-  <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="rampage" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="rampage" />
   <project path="system/tools/aidl" name="system_tools_aidl" groups="pdk" remote="rampage" />
 
   <!--frameworks-->
@@ -58,6 +60,6 @@
   <project path="external/expat" name="external_expat" groups="pdk" remote="rampage" />
 
   <!--hardware-->
-  <project path="hardware/nxp/nfc" name="platform_hardware_nxp_nfc" groups="pdk" remote="rampage" /> 
+  <project path="hardware/nxp/nfc" name="hardware_nxp_nfc" groups="pdk" remote="rampage" /> 
 
 </manifest>

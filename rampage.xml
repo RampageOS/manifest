@@ -39,7 +39,7 @@
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="rampage" />
 
   <!--system-->
-  <project path="system/bt" name="android_system_bt" groups="pdk" remote="rampage" />
+  <project path="system/bt" name="system_bt" groups="pdk" remote="rampage" />
   <project path="system/core" name="system_core" groups="pdk" remote="rampage" />
   <project path="system/nfc" name="system_nfc" groups="pdk" remote="rampage" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="rampage" />

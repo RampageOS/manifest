@@ -117,5 +117,6 @@
   <remove-project name="platform/external/e2fsprogs" />  
   <remove-project name="platform/external/robolectric-shadows" />
   <remove-project name="platform/external/tremolo" />
+  <remove-project name="platform/external/zlib" />
   <remove-project name="platform/libcore" />
 </manifest>

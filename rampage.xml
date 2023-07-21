@@ -61,6 +61,7 @@
   <project path="external/libexif" name="external_libexif" groups="pdk" remote="rampage" />
   <project path="external/tremolo" name="external_tremolo" groups="pdk" remote="rampage" />
   <project path="external/expat" name="external_expat" groups="pdk" remote="rampage" />
+  <project path="external/zlib" name="external_zlib" groups="pdk" remote="rampage" />
 
   <!--hardware-->
   <project path="hardware/nxp/nfc" name="hardware_nxp_nfc" groups="pdk" remote="rampage" /> 

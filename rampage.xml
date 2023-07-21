@@ -66,4 +66,7 @@
   <!--hardware-->
   <project path="hardware/nxp/nfc" name="hardware_nxp_nfc" groups="pdk" remote="rampage" /> 
 
+  <!--tools-->
+  <project path="tools/apksig" name="tools_apksig" groups="pdk,tradefed" remote="rampage" />
+
 </manifest>

@@ -57,6 +57,7 @@
   <!--external-->
   <project path="external/aac" name="external_aac" groups="pdk" remote="rampage" />
   <project path="external/dtc" name="external_dtc" groups="pdk" remote="rampage" />
+  <project path="external/freetype" name="external_freetype" groups="pdk" remote="rampage" />
   <project path="external/libavc" name="external_libavc" groups="pdk" remote="rampage"/>
   <project path="external/libexif" name="external_libexif" groups="pdk" remote="rampage" />
   <project path="external/tremolo" name="external_tremolo" groups="pdk" remote="rampage" />

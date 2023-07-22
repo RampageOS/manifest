@@ -17,7 +17,7 @@
   <project path="manifest" name="manifest" remote="rampage" />
   <project path="vendor/rampage" name="vendor_rampage" remote="rampage" />
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="rampage" />
-   <project path="packages/apps/Extensions" name="packages_apps_Extensions" remote="aex" remote="rampage" />
+  <project path="packages/apps/Extensions" name="packages_apps_Extensions" remote="rampage" />
 
   <!--packages/apps-->
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-fs" remote="rampage" />

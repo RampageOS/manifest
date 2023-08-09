@@ -28,6 +28,7 @@
   <project path="packages/apps/KeyChain" name="packages_apps_KeyChain" groups="pdk-fs" remote="rampage" />
   <project path="packages/apps/ManagedProvisioning" name="packages_apps_ManagedProvisioning" groups="pdk-fs" remote="rampage" />
   <project path="packages/apps/PermissionController" name="packages_apps_PackageInstaller" groups="pdk-fs" remote="rampage" />
+  <project path="packages/apps/QuickAccessWallet" name="packages_apps_QuickAccessWallet" groups="pdk-fs" remote="rampage"/>
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="rampage" />
 
   <!--packages/providers-->

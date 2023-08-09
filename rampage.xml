@@ -43,6 +43,7 @@
 
   <!--system-->
   <project path="system/bt" name="system_bt" groups="pdk" remote="rampage" />
+  <project path="system/ca-certificates" name="system_ca-certificates" groups="pdk" remote="rampage" />
   <project path="system/core" name="system_core" groups="pdk" remote="rampage" />
   <project path="system/nfc" name="system_nfc" groups="pdk" remote="rampage" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="rampage" />

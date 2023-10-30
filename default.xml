@@ -19,7 +19,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/"
-           revision="refs/tags/android-security-11.0.0_r72"/>
+           revision="refs/tags/android-11.0.0_r48"/>
 
   <remote  name="github"
            fetch="https://github.com" />

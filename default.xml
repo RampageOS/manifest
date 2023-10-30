@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- Core source -->
+<!-- Core source -->
   <remote  name="clo-la"
            fetch="https://git.codelinaro.org/clo/la"
            review="codelinaro.org" />
-  <default revision="refs/tags/LA.UM.9.2.1.r1-08000-sdm660.0"
+  <default revision="refs/tags/LA.QSSI.11.0.r1-20500-qssi.0"
            remote="clo-la"
            sync-c="true"
            sync-f="true" />
+
+  <remote  name="clo-device"
+           fetch="https://git.codelinaro.org/clo/la"
+           review="codelinaro.org"
+           revision="refs/tags/LA.UM.9.6.2.c26-03700-89xx.0" />
 
   <!-- AOSP -->
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/"
-           revision="refs/tags/android-11.0.0_r43"/>
+           revision="refs/tags/android-security-11.0.0_r72"/>
 
   <remote  name="github"
            fetch="https://github.com" />
@@ -98,9 +103,9 @@
   <project name="platform/external/androidplot" path="external/androidplot" />
   <project name="platform/external/angle" path="external/angle" />
   <project name="platform/external/ant-glob" path="external/ant-glob" />
-  <project name="platform/external/ant-wireless/ant_client" path="external/ant-wireless/ant_client" />
-  <project name="platform/external/ant-wireless/ant_native" path="external/ant-wireless/ant_native" />
-  <project name="platform/external/ant-wireless/ant_service" path="external/ant-wireless/ant_service" />
+  <project name="platform/external/ant-wireless/ant_client" path="external/ant-wireless/ant_client" remote="clo-device"/>
+  <project name="platform/external/ant-wireless/ant_native" path="external/ant-wireless/ant_native" remote="clo-device"/>
+  <project name="platform/external/ant-wireless/ant_service" path="external/ant-wireless/ant_service" remote="clo-device" />
   <project name="platform/external/ant-wireless/hidl" path="external/ant-wireless/hidl" />
   <project name="platform/external/antlr" path="external/antlr" />
   <project name="platform/external/apache-commons-bcel" path="external/apache-commons-bcel" />
@@ -432,7 +437,7 @@
   <project name="platform/external/vulkan-headers" path="external/vulkan-headers" />
   <project name="platform/external/vulkan-validation-layers" path="external/vulkan-validation-layers" />
   <project name="platform/external/walt" path="external/walt" />
-  <project name="platform/external/wayland" path="external/wayland" />
+  <project name="platform/external/wayland_repo" path="external/wayland" />
   <project name="platform/external/wayland-protocols" path="external/wayland-protocols" />
   <project name="platform/external/webp" path="external/webp" />
   <project name="platform/external/webrtc" path="external/webrtc" />
@@ -490,7 +495,7 @@
   <project name="platform/hardware/nxp/nfc" path="hardware/nxp/nfc" />
   <project name="platform/hardware/nxp/secure_element" path="hardware/nxp/secure_element" />
   <project name="platform/hardware/qcom/audio" path="vendor/qcom/opensource/audio-hal/primary-hal" />
-  <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" />
+  <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" remote="clo-device" />
   <project name="platform/hardware/qcom/camera" path="hardware/qcom/camera" />
   <project name="platform/hardware/qcom/display" path="hardware/qcom/display" />
   <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" >
@@ -567,9 +572,9 @@
   <project name="platform/packages/apps/SecureElement" path="packages/apps/SecureElement" />
   <project name="platform/packages/apps/Settings" path="packages/apps/Settings" />
   <project name="platform/packages/apps/SettingsIntelligence" path="packages/apps/SettingsIntelligence" />
-  <project name="platform/packages/apps/SnapdragonCamera" path="packages/apps/SnapdragonCamera" />
-  <project name="platform/packages/apps/SnapdragonGallery" path="vendor/codeaurora/commonsys/packages/apps/SnapdragonGallery" />
-  <project name="platform/packages/apps/SnapdragonMusic" path="vendor/codeaurora/commonsys/packages/apps/SnapdragonMusic" >
+  <project name="platform/packages/apps/SnapdragonCamera" path="packages/apps/SnapdragonCamera" remote="clo-device"/>
+  <project name="platform/packages/apps/SnapdragonGallery" path="vendor/codeaurora/commonsys/packages/apps/SnapdragonGallery" remote="clo-device"/>
+  <project name="platform/packages/apps/SnapdragonMusic" path="vendor/codeaurora/commonsys/packages/apps/SnapdragonMusic" remote="clo-device">
     <linkfile dest="vendor/qcom/defs/product-defs/system/app_snapMusic_product.mk" src="app_snapMusic_system_product.mk"/>
   </project>
   <project name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" />
@@ -708,7 +713,7 @@
   <project name="platform/system/netd" path="system/netd" />
   <project name="platform/system/nfc" path="system/nfc" />
   <project name="platform/system/nvram" path="system/nvram" />
-  <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" />
+  <project name="platform/system/qcom" path="vendor/qcom/opensource/softap"  remote="clo-device"/>
   <project name="platform/system/security" path="system/security" />
   <project name="platform/system/sepolicy" path="system/sepolicy" />
   <project name="platform/system/server_configurable_flags" path="system/server_configurable_flags" />
@@ -753,7 +758,7 @@
   <project name="platform/tools/security" path="tools/security" />
   <project name="platform/tools/test/connectivity" path="tools/test/connectivity" />
   <project name="platform/tools/test/graphicsbenchmark" path="tools/test/graphicsbenchmark" />
-  <project name="platform/tools/tradefederation" path="tools/tradefederation/core" />
+  <project name="platform/tools/tradefederation_repo" path="tools/tradefederation/core" />
   <project name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" />
   <project name="platform/tools/trebuchet" path="tools/trebuchet" />
   <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" />
@@ -805,21 +810,21 @@
   <project name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm" />
   <project name="platform/vendor/qcom-opensource/fm-commonsys" path="vendor/qcom/opensource/commonsys/fm" />
   <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" />
-  <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" />
+  <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" remote="clo-device" />
   <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" />
   <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location" >
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/gps-product-opensource.mk" src="gps_vendor_product.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/legacy/gps-product-opensource.mk" src="gps_vendor_product.mk"/>
   </project>
-  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" />
+  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" remote="clo-device" />
   <project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" />
   <project name="platform/vendor/qcom-opensource/power" path="vendor/qcom/opensource/power" />
   <project name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext" />
-  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" />
+  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" remote="clo-device" />
   <project name="platform/vendor/qcom-opensource/system/bt" path="vendor/qcom/opensource/commonsys/system/bt" />
-  <project name="platform/vendor/qcom-opensource/thermal-engine" path="vendor/qcom/opensource/thermal-engine" />
+  <project name="platform/vendor/qcom-opensource/thermal-engine" path="vendor/qcom/opensource/thermal-engine" remote="clo-device" />
   <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" />
-  <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" />
+  <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" remote="clo-device" />
   <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb" >
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
   </project>

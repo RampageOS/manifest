@@ -4,13 +4,16 @@
   <remote  name="rohie"
            fetch="https://github.com/RohieOS/"
            revision="11" />
+  <remote  name="rohie-clo"
+           fetch="https://github.com/RohieOS-CLO"
+           revision="Reborn" />
 
   <remote name="rohie-gitlab"
           fetch="https://gitlab.com/RohieOS"
           revision="11" />
 
   <!-- build -->
-  <project path="build/make" name="platform_build_make" remote="rohie" >
+  <project path="build/make" name="build" remote="rohie-clo" >
     	   <copyfile src="core/root.mk" dest="Makefile" />
   	   <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
    	   <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -20,9 +23,9 @@
   	   <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <project path="build/blueprint" name="platform_build_blueprint" remote="rohie" />
-  <project path="bootable/recovery" name="platform_bootable_recovery" remote="rohie" />
-  <project path="build/soong" name="platform_build_soong" remote="rohie" >
+  <project path="build/blueprint" name="build_blueprint" remote="rohie-clo" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="rohie-clo" />
+  <project path="build/soong" name="build_soong" remote="rohie-clo" >
  	   <linkfile src="root.bp" dest="Android.bp" />
 	   <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -42,12 +45,12 @@
   <project path="external/lottie" name="external_lottie" remote="rohie" />
 
   <!-- frameworks -->
-  <project path="frameworks/av" name="platform_frameworks_av" remote="rohie"/>
-  <project path="frameworks/base" name="platform_frameworks_base" remote="rohie"/>
-  <project path="frameworks/native" name="platform_frameworks_native" remote="rohie"/>
-  <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="rohie"/>
-  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="rohie"/>
-  <project path="frameworks/opt/timezonepicker" name="platform_frameworks_opt_timezonepicker" remote="rohie"/>
+  <project path="frameworks/av" name="frameworks_av" remote="rohie-clo"/>
+  <project path="frameworks/base" name="frameworks_base" remote="rohie-clo"/>
+  <project path="frameworks/native" name="frameworks_native" remote="rohie-clo"/>
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="rohie-clo"/>
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="rohie-clo"/>
+  <project path="frameworks/opt/timezonepicker" name="frameworks_opt_timezonepicker" remote="rohie-clo"/>
 
   <!-- hardware -->
   <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="rohie"/>

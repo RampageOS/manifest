@@ -30,14 +30,14 @@
 	   <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
-  <project path="art" name="platform_art" remote="rohie" />
-  <project path="platform_testing" name="platform_testing" remote="rohie" />
+  <project path="art" name="platform_art" remote="rohie-clo" />
+  <project path="platform_testing" name="platform_testing" remote="rohie-clo" />
 
   <!--bionic-->
-  <project path="bionic" name="platform_bionic" groups="pdk" remote="rohie" />
+  <project path="bionic" name="platform_bionic" groups="pdk" remote="rohie-clo" />
 
   <!-- external -->
-  <project path="external/libcxx" name="external_libcxx" remote="rohie"/>
+  <project path="external/libcxx" name="external_libcxx" remote="rohie-clo"/>
   <project path="external/selinux" name="platform_external_selinux" remote="rohie" />
   <project path="external/airbnb-lottie" name="platform_external_airbnb-lottie" remote="rohie" />
   <project path="external/faceunlock" name="external_faceunlock" remote="rohie-gitlab" />
@@ -67,10 +67,10 @@
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="rohie"/>
 
   <!-- packages/apps -->
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="rohie-caf"/>
-  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="rohie-caf"/>
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="rohie-clo"/>
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="rohie-clo"/>
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="rohie-gitlab" />
-  <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="rohie-caf"/>
+  <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="rohie-clo"/>
   <project path="packages/apps/Plugins" name="packages_apps_Plugins" remote="rohie" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="rohie" />
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="rohie" />
